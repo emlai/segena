@@ -1,0 +1,30 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tipa}
+\usepackage[margin=1in]{geometry}
+\usepackage{tabularx}
+\usepackage{multirow}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\usepackage{verbatimbox}
+\usepackage{textcomp}
+
+\newcommand{\sh}{\textipa{S}}
+\newcommand{\zh}{\textipa{Z}}
+\newcommand{\grapheme}[1]{\textlangle#1\textrangle}
+
+\begin{document}
+
+\title{The Grammar of Ségēna}
+\maketitle
+
+Ségēna\footnote{pronounced \textipa{[se(;)"ge:na]}} is a constructed language
+that mixes fusional, agglutinative, and analytic language features. It is
+influenced primarily by Ancient Greek, Latin, Japanese, and English.
+
+\tableofcontents
+
+\include{src/phonology}
+\include{src/grammar}
+
+\end{document}
