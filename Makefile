@@ -1,5 +1,5 @@
 pdf-dev:
-	latexmk -pdf -quiet -pvc -interaction=nonstopmode src/segena
+	latexmk -pdf -pvc -interaction=nonstopmode src/segena
 
 pdf:
-	latexmk -pdf -quiet src/segena
+	latexmk -pdf src/segena
